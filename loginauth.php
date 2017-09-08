@@ -17,13 +17,13 @@
 
 	$test = $koneksi->query($query);
 
-	
+	$count = 0;
 	$count = $test->num_rows;
-
-	if ($count = 0) {
-		echo " Username Password Salah";
+	
+	if ($count > 0) {
+		echo "<p> Username Password Benar </p>";
 	} else {
-		echo "Username Password Benar";
+		echo "Username Password ";
 	}
 
  ?>
