@@ -14,17 +14,16 @@
 
 	$query = "SELECT id FROM user WHERE username='$username' AND password='$password'";
 
-	if ($koneksi->query($query) === TRUE) {
-	    echo "New record created successfully";
-	} else {
-	    echo "ERROR";
-	}
 
+	$test = $koneksi->query($query);
 
-	if ($hasil->num_rows = 0) {
-		echo "<p> Username Password Salah</p>";
+	
+	$count = $test->num_rows;
+
+	if ($count = 0) {
+		echo " Username Password Salah";
 	} else {
-		echo "<p> Username Password Benar</p>";
+		echo "Username Password Benar";
 	}
 
  ?>
