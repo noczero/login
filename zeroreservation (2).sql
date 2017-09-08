@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Host: 127.0.0.1
--- Generation Time: Sep 08, 2017 at 12:59 PM
+-- Generation Time: Sep 08, 2017 at 01:11 PM
 -- Server version: 5.6.21
 -- PHP Version: 5.6.3
 
@@ -19,6 +19,17 @@ SET time_zone = "+00:00";
 --
 -- Database: `zeroreservation`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Table structure for table `maskapai`
+--
+
+CREATE TABLE IF NOT EXISTS `maskapai` (
+`id` int(11) NOT NULL,
+  `namamaskapai` varchar(25) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 -- --------------------------------------------------------
 
@@ -45,6 +56,12 @@ INSERT INTO `user` (`id`, `username`, `password`) VALUES
 --
 
 --
+-- Indexes for table `maskapai`
+--
+ALTER TABLE `maskapai`
+ ADD PRIMARY KEY (`id`);
+
+--
 -- Indexes for table `user`
 --
 ALTER TABLE `user`
@@ -54,6 +71,11 @@ ALTER TABLE `user`
 -- AUTO_INCREMENT for dumped tables
 --
 
+--
+-- AUTO_INCREMENT for table `maskapai`
+--
+ALTER TABLE `maskapai`
+MODIFY `id` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT for table `user`
 --

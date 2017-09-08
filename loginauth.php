@@ -23,7 +23,7 @@
 	if ($count > 0) {
 		echo "<p> Username Password Benar </p>";
 	} else {
-		echo "Username Password ";
+		echo "Username Password Salah ";
 	}
 
  ?>
