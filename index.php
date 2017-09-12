@@ -12,6 +12,7 @@
 <link href='https://fonts.googleapis.com/css?family=Passion+One' rel='stylesheet' type='text/css'>
     <link href='https://fonts.googleapis.com/css?family=Oxygen' rel='stylesheet' type='text/css'>
 
+
 </head>
 <body>
       <nav class="navbar navbar-default">
@@ -40,44 +41,11 @@
       </nav>
 
 <div class="jumbotron text-center">
-  <div>
-    <img src="img/logo-himaif123.png" alt="" width="10%" height="10%">
-  </div>
-  <h5>Login Page</h5>
-  <small>Type your username & password</small>
-  <br>
-
-
-  <form class="loginform" method="POST" action="loginauth.php">
-            <div class="form-group">
-              <label for="username" class="cols-sm-2 control-label">Username</label>
-              <div class="cols-sm-10">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group">
-              <label for="password" class="cols-sm-2 control-label">Password</label>
-              <div class="cols-sm-10">
-                <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                  <input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
-                </div>
-              </div>
-            </div>
-
-            <div class="form-group ">
-              <input type="submit" class="btn btn-primary btn-lg btn-block login-button" value="Login">
-            </div>
-            
-          </form>
+  <h1>Ini Home</h1>
 </div>
-
-</body>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+ <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 <script src="js/bootstrap.js"></script>
 <script src="js/jquery.js"></script>
+</body>
+
 </html>
