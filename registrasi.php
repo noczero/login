@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>LOGIN</title>
+<title>Registrasi</title>
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -121,7 +121,7 @@
             </div>
 
             <div class="form-group ">
-              <input type="submit" class="btn btn-primary btn-lg btn-block login-button" value="Login">
+              <input type="submit" class="btn btn-primary btn-lg btn-block login-button" value="Registrasi">
             </div>
             
           </form>

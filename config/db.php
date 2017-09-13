@@ -1,7 +1,13 @@
 <?php 
 	$serverDB ="localhost";
-	$DB = "zeroreservation";
+	$DB = "zeroreservationdb";
 	$username = "root";
 	$pass = "";
-	$koneksi = new mysqli($serverDB,$username,$pass,$DB);
+
+	$koneksi = mysqli_connect($serverDB,$username,$pass,$DB);
+
+	if (!$koneksi)
+	  {
+	 	die("Connection failed: " . mysqli_connect_error());
+	  }
  ?>

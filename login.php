@@ -3,7 +3,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>LOGIN</title>
+<title>Customer Login Page</title>
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -40,15 +40,18 @@
       </nav>
 
 <div class="jumbotron text-center">
-  <div>
-    <img src="img/logo-himaif123.png" alt="" width="10%" height="10%">
+<div class="row">
+  
+  <div class="col-md-4">
+  
+    <img src="img/logo.png" alt="" width="80%" height="80%">
+  
+
   </div>
-  <h5>Login Page</h5>
+  <div class="col-md-8">
   <small>Type your username & password</small>
   <br>
-
-
-  <form class="loginform" method="POST" action="loginauth.php">
+    <form class="loginform " method="POST" action="loginauth.php">
             <div class="form-group">
               <label for="username" class="cols-sm-2 control-label">Username</label>
               <div class="cols-sm-10">
@@ -74,6 +77,10 @@
             </div>
             
           </form>
+  </div>
+
+  
+</div>
 </div>
 
 </body>

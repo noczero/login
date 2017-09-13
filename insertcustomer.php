@@ -1,22 +1,27 @@
 <?php 
-include 'config/db.php';
-  $noktp = $koneksi->escape_string($_POST['noktp']);
-  $username = $koneksi->escape_string($_POST['username']);
-  $password = $koneksi->escape_string($_POST['password']);
-  $address = $koneksi->escape_string($_POST['address']);
-  $age = $koneksi->escape_string($_POST['age']);
-  $gender = $koneksi->escape_string($_POST['gender']);
-  $notel = $koneksi->escape_string($_POST['notel']);
+  include 'config/db.php';
+
+  $noktp = $_POST['noktp'];
+  $username = $_POST['username'];
+  $password = $_POST['password'];
+  $name = $_POST['name'];
+  $address = $_POST['address'];
+  $age = $_POST['age'];
+  $gender = $_POST['gender'];
+  $notel = $_POST['notel'];
 
 
+  $insertQuery = "INSERT INTO customer (no_ktp,username,password,nama,alamat,umur,jenis_kelamin,no_telepon) VALUES ('$noktp','$username','$password','$name','$address','$age','$gender','$notel')";
 
-  $insertQuery = "INSERT INTO customer (no_ktp,username,password,nama,alamat,umur,jenis_kelamin,no_telepon) VALUES ('$noktp','$username','$password','$address','$age','$gender','$notel')";
 
-  $koneksi->query($insertQuery);
-  echo "
-    <script> alert('Registrasi Sukses') 
-    window.location = 'login.php';
-    </script>
-  ";
+  if (mysqli_query($koneksi, $insertQuery)) {
+     echo "
+        <script> alert('Registrasi Sukses') 
+        window.location = 'login.php';
+        </script>
+      ";
+  } else {
+      echo "Error: " . $insertQuery . "<br>" . mysqli_error($koneksi);
+  }
   
  ?>
