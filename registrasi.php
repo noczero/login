@@ -3,7 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Registrasi</title>
+<title>Zero Reservation - Registrasi</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -27,19 +31,19 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="index.php">Home</a></li>
+              <!-- <li class="active"><a href="index.php">Home</a></li> -->
               <!-- <li><a href="#">Login</a></li>
               <li><a href="#">Registrasi</a></li> -->
             </ul>
             <ul class="nav navbar-nav navbar-right">
               <li><a href="login.php">Login</a></li>
-              <li><a href="registrasi.php">Registrasi</a></li>
+              <li class="active"><a href="registrasi.php">Registrasi</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
 
-<div class="jumbotron text-center">
+<div class=" container-fluid text-center col-md-8 col-md-offset-2">
   <h2>Registrasi Customer</h2>
   <form class="loginform" method="POST" action="insertcustomer.php">
             <div class="form-group">
@@ -55,7 +59,7 @@
               <label for="username" class="cols-sm-2 control-label">Username</label>
               <div class="cols-sm-10">
                 <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
                   <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
                 </div>
               </div>
@@ -74,7 +78,7 @@
               <label for="username" class="cols-sm-2 control-label">Name</label>
               <div class="cols-sm-10">
                 <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-bookmark" aria-hidden="true"></i></span>
                   <input type="text" class="form-control" name="name" id="username"  placeholder="Enter your name"/>
                 </div>
               </div>
@@ -83,7 +87,7 @@
               <label for="username" class="cols-sm-2 control-label">Address</label>
               <div class="cols-sm-10">
                 <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-globe" aria-hidden="true"></i></span>
                   <input type="text" class="form-control" name="address" id="username"  placeholder="Enter your address"/>
                 </div>
               </div>
@@ -92,7 +96,7 @@
               <label for="username" class="cols-sm-2 control-label">Age</label>
               <div class="cols-sm-10">
                 <div class="input-group date">
-                  <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-link" aria-hidden="true"></i></span>
                   <input type="text" class="form-control" name="age" id="username"  placeholder="Enter your age"/>
                 </div>
               </div>
@@ -101,7 +105,7 @@
               <label for="username" class="cols-sm-2 control-label">Gender</label>
               <div class="cols-sm-10">
                 <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-leaf" aria-hidden="true"></i></span>
                   <select class="input-group" name="gender">
                     <option value="">----Select Gender---</option>
                     <option value="L">Male</option>
@@ -114,7 +118,7 @@
               <label for="username" class="cols-sm-2 control-label">Phone Number</label>
               <div class="cols-sm-10">
                 <div class="input-group">
-                  <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
+                  <span class="input-group-addon"><i class="glyphicon glyphicon-phone" aria-hidden="true"></i></span>
                   <input type="text" class="form-control" name="notel" id="username"  placeholder="Enter your birthday"/>
                 </div>
               </div>
@@ -126,6 +130,9 @@
             
           </form>
 </div>
+
+
+
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

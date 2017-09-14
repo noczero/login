@@ -3,7 +3,11 @@
 <!DOCTYPE html>
 <html>
 <head>
-<title>Customer Login Page</title>
+<title>Zero Reservation - Login Page</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
 
 <link rel="stylesheet" href="css/bootstrap.min.css">
 <link rel="stylesheet" href="css/bootstrap-theme.css">
@@ -27,31 +31,27 @@
           </div>
           <div id="navbar" class="navbar-collapse collapse">
             <ul class="nav navbar-nav">
-              <li class="active"><a href="index.php">Home</a></li>
               <!-- <li><a href="#">Login</a></li>
               <li><a href="#">Registrasi</a></li> -->
             </ul>
             <ul class="nav navbar-nav navbar-right">
-              <li><a href="login.php">Login</a></li>
+              <li class="active"><a href="login.php">Login</a></li>
               <li><a href="registrasi.php">Registrasi</a></li>
             </ul>
           </div><!--/.nav-collapse -->
         </div><!--/.container-fluid -->
       </nav>
 
-<div class="jumbotron text-center">
+<div class="text-center container-fluid">
 <div class="row">
   
-  <div class="col-md-4">
-  
-    <img src="img/logo.png" alt="" width="80%" height="80%">
-  
-
+  <div class=" col-md-8">
+    <img class="imglogo" src="img/logo.png" alt="" width="50%" height="50%">
   </div>
-  <div class="col-md-8">
+  <div class="col-md-4">
   <small>Type your username & password</small>
   <br>
-    <form class="loginform " method="POST" action="loginauth.php">
+    <form class="loginform" method="POST" action="loginauth.php">
             <div class="form-group">
               <label for="username" class="cols-sm-2 control-label">Username</label>
               <div class="cols-sm-10">
@@ -72,7 +72,7 @@
               </div>
             </div>
 
-            <div class="form-group ">
+            <div class="form-group">
               <input type="submit" class="btn btn-primary btn-lg btn-block login-button" value="Login">
             </div>
             
@@ -82,6 +82,12 @@
   
 </div>
 </div>
+
+<footer class="container-fluid bg-4 footerbottomer text-center">
+  <div class="centerfooter">
+    <p>Copyright ZeroInside</p> 
+  </div>
+</footer>
 
 </body>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>

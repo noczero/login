@@ -1,21 +1,13 @@
-/*
-/* Created by Filipe Pina
- * Specific styles of signin, register, component
- */
-/*
- * General styles
- */
+
 #playground-container {
     height: 500px;
     overflow: hidden !important;
     -webkit-overflow-scrolling: touch;
 }
 body, html{
-     height: 100%;
-  background-repeat: no-repeat;
-  background:url(https://i.ytimg.com/vi/4kfXjatgeEU/maxresdefault.jpg);
-  font-family: 'Oxygen', sans-serif;
-      background-size: cover;
+      font-family: 'Oxygen', sans-serif;
+      position: relative,
+      min-height: 100%;
 }
 
 .main{
@@ -117,6 +109,29 @@ span.input-group-addon i {
 }
 
 .loginform {
-  margin-left: 150px;
-  margin-right: 150px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+
+.logologin {
+  margin-right: 50px;
+  margin-left: 50px;
+}
+
+.bg-4 { 
+    background-color: #f2f2f2;
+}
+
+.footerbottomer {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 80px;
+    width: 100%;
+    overflow:hidden;
+}
+
+.centerfooter {
+  padding-top : 30px;
 }
