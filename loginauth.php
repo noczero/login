@@ -39,7 +39,7 @@
 			header('location:index.php?page=admin');
 
 		} elseif ($countMaskapai > 0) {
-			$data = mysqli_fetch_array($resultCustomer,MYSQLI_ASSOC); //get data
+			$data = mysqli_fetch_array($resultMaskapai,MYSQLI_ASSOC); //get data
 			setSession($data["id_maskapai"], $data["username"] , $data["nama"]);
 			header('location:index.php?page=maskapai');
 		} else {
