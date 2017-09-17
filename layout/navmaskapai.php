@@ -1,5 +1,5 @@
                     <li class="active">
-                        <a href="index.html">
+                        <a href="index.php?page=maskapai">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
@@ -11,14 +11,10 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="javascript:void(0);" class="menu-toggle">
-                                    <span>Cards</span>
-                                </a>
-                                <ul class="ml-menu">
-                                    <li>
-                                        <a href="pages/widgets/cards/basic.html">Basic</a>
-                                    </li>
-                                </ul>
+                                <a href="index.php?page=maskapai&menu=viewpesawat" class="menu-toggle">Lihat Daftar Jadwal Penerbangan</a>
+                            </li>
+                            <li>
+                                <a href="index.php?page=maskapai&menu=insertpesawat" class="menu-toggle">Tambah Jadwal Penerbangan</a>
                             </li>
                         </ul>
                     </li>
@@ -29,14 +25,10 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="javascript:void(0);" class="menu-toggle">
-                                    <span>Cards</span>
-                                </a>
-                                <ul class="ml-menu">
-                                    <li>
-                                        <a href="pages/widgets/cards/basic.html">Basic</a>
-                                    </li>
-                                </ul>
+                                <a href="index.php?page=maskapai&menu=viewpesawat" class="menu-toggle">Lihat Daftar Pesawat</a>
+                            </li>
+                            <li>
+                                <a href="index.php?page=maskapai&menu=insertpesawat" class="menu-toggle">Tambah Pesawat</a>
                             </li>
                         </ul>
                     </li>
@@ -45,16 +37,12 @@
                             <i class="material-icons">widgets</i>
                             <span>Kelola Jam Penerbangan</span>
                         </a>
-                        <ul class="ml-menu">
+                         <ul class="ml-menu">
                             <li>
-                                <a href="javascript:void(0);" class="menu-toggle">
-                                    <span>Cards</span>
-                                </a>
-                                <ul class="ml-menu">
-                                    <li>
-                                        <a href="pages/widgets/cards/basic.html">Basic</a>
-                                    </li>
-                                </ul>
+                                <a href="index.php?page=maskapai&menu=viewjamterbang" class="menu-toggle">Lihat Daftar Jam Penerbangan</a>
+                            </li>
+                            <li>
+                                <a href="index.php?page=maskapai&menu=insertjamterbang" class="menu-toggle">Tambah Jam Penerbangan</a>
                             </li>
                         </ul>
                     </li>

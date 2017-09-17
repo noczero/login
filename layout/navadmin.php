@@ -1,5 +1,5 @@
   <li class="active">
-                        <a href="index.html">
+                        <a href="index.php?page=admin">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
@@ -11,14 +11,10 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="javascript:void(0);" class="menu-toggle">
-                                    <span>Cards</span>
-                                </a>
-                                <ul class="ml-menu">
-                                    <li>
-                                        <a href="pages/widgets/cards/basic.html">Basic</a>
-                                    </li>
-                                </ul>
+                                <a href="index.php?page=admin&menu=viewmaskapai" class="menu-toggle">Lihat Daftar Maskapai</a>
+                            </li>
+                            <li>
+                                <a href="index.php?page=admin&menu=insertmaskapai" class="menu-toggle">Tambah Maskapai</a>
                             </li>
                         </ul>
                     </li>
@@ -29,32 +25,10 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="javascript:void(0);" class="menu-toggle">
-                                    <span>Cards</span>
-                                </a>
-                                <ul class="ml-menu">
-                                    <li>
-                                        <a href="pages/widgets/cards/basic.html">Basic</a>
-                                    </li>
-                                </ul>
+                                <a href="index.php?page=admin&menu=viewcustomer" class="menu-toggle">Lihat Daftar Customer</a>
                             </li>
-                        </ul>
-                    </li>
-                      <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
-                            <i class="material-icons">widgets</i>
-                            <span>Kelola Bandara</span>
-                        </a>
-                        <ul class="ml-menu">
                             <li>
-                                <a href="javascript:void(0);" class="menu-toggle">
-                                    <span>Cards</span>
-                                </a>
-                                <ul class="ml-menu">
-                                    <li>
-                                        <a href="pages/widgets/cards/basic.html">Basic</a>
-                                    </li>
-                                </ul>
+                                <a href="index.php?page=admin&menu=insertcustomer" class="menu-toggle">Tambah Customer</a>
                             </li>
                         </ul>
                     </li>

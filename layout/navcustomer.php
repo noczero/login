@@ -1,5 +1,5 @@
                     <li class="active">
-                        <a href="index.html">
+                        <a href="index.php?page=customer">
                             <i class="material-icons">home</i>
                             <span>Home</span>
                         </a>
@@ -9,16 +9,12 @@
                             <i class="material-icons">widgets</i>
                             <span>Pesan Penerbangan</span>
                         </a>
-                        <ul class="ml-menu">
+                         <ul class="ml-menu">
                             <li>
-                                <a href="javascript:void(0);" class="menu-toggle">
-                                    <span>Cards</span>
-                                </a>
-                                <ul class="ml-menu">
-                                    <li>
-                                        <a href="pages/widgets/cards/basic.html">Basic</a>
-                                    </li>
-                                </ul>
+                                <a href="index.php?page=customer&menu=viewmaupesan" class="menu-toggle">Pilih Penerbangan</a>
+                            </li>
+                            <li>
+                                <a href="index.php?page=customer&menu=kelolapenerbangn" class="menu-toggle">Kelola Penerbangan Saya</a>
                             </li>
                         </ul>
                     </li>
