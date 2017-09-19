@@ -14,27 +14,15 @@
                                 <a href="index.php?page=customer&menu=viewmaupesan" class="menu-toggle">Pilih Penerbangan</a>
                             </li>
                             <li>
-                                <a href="index.php?page=customer&menu=kelolapenerbangn" class="menu-toggle">Kelola Penerbangan Saya</a>
+                                <a href="index.php?page=customer&menu=kelolapesanan" class="menu-toggle">Kelola Penerbangan Saya</a>
                             </li>
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
+                        <a href="index.php?page=customer&menu=isisaldo" class="menu-toggle">
                             <i class="material-icons">widgets</i>
-                            <span>Isi Saldo</span>
+                            <span>Kelola Saldo</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="javascript:void(0);" class="menu-toggle">
-                                    <span>Cards</span>
-                                </a>
-                                <ul class="ml-menu">
-                                    <li>
-                                        <a href="pages/widgets/cards/basic.html">Basic</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
                     </li>
                     <li class="header">LABELS</li>
                     <li>

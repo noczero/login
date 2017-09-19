@@ -47,7 +47,7 @@
                          <td><?php echo $pecah['waktu_tiba'] ?></td>
                          <td><?php echo $pecah['harga'] ?></td>
                          <td>
-                            <a class="btn btn-info" href="#">Pesan</a>
+                            <a class="btn btn-info" href="index.php?page=customer&menu=viewmaupesan&act=pesan&id=<?php echo $pecah['id_penerbangan']; ?>&harga=<?php echo $pecah['harga']; ?>">Pesan</a>
                          </td>
                  
                      </tr>

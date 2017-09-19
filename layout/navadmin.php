@@ -33,23 +33,10 @@
                         </ul>
                     </li>
                     <li>
-                        <a href="javascript:void(0);" class="menu-toggle">
+                        <a href="index.php?page=admin&menu=viewpesanan" class="menu-toggle">
                             <i class="material-icons">widgets</i>
                             <span>Konfirmasi Transaksi</span>
                         </a>
-                        <ul class="ml-menu">
-                            <li>
-                                <a href="javascript:void(0);" class="menu-toggle">
-                                    <span>Cards</span>
-                                </a>
-                                <ul class="ml-menu">
-                                    <li>
-                                        <a href="pages/widgets/cards/basic.html">Basic</a>
-                                    </li>
-                                </ul>
-                            </li>
-                        </ul>
-                  
                     </li>
                     <li class="header">LABELS</li>
                     <li>

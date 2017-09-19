@@ -11,10 +11,10 @@
                         </a>
                         <ul class="ml-menu">
                             <li>
-                                <a href="index.php?page=maskapai&menu=viewpesawat" class="menu-toggle">Lihat Daftar Jadwal Penerbangan</a>
+                                <a href="index.php?page=maskapai&menu=viewjadwal" class="menu-toggle">Lihat Daftar Jadwal Penerbangan</a>
                             </li>
                             <li>
-                                <a href="index.php?page=maskapai&menu=insertpesawat" class="menu-toggle">Tambah Jadwal Penerbangan</a>
+                                <a href="index.php?page=maskapai&menu=insertjadwal" class="menu-toggle">Tambah Jadwal Penerbangan</a>
                             </li>
                         </ul>
                     </li>

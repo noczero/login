@@ -27,6 +27,16 @@
                         }
                     } elseif ($_GET['menu'] == "insertcustomer"){
                         include 'admin/insertcustom.php';
+                    } elseif ($_GET['menu'] == "viewpesanan"){
+                        include 'admin/viewkonfirmasi.php';
+
+                        if (isset($_GET['act'])) {
+                            if($_GET['act'] == "edit") {
+                                include 'admin/editpesanan.php';
+                            } elseif ($_GET['act'] == "delete") {
+                                include 'admin/deletepesanan.php';
+                            }
+                        }
                     }
                 } else {
                     include 'defaultcontent.php';
@@ -36,9 +46,19 @@
                 if (isset($_GET['menu'])) {
                     if ($_GET['menu'] == 'viewmaupesan'){
                      include 'customer/viewallpenerbangan.php';
+
+                     if (isset($_GET['act'])){
+                        if ($_GET['act'] == "pesan") {
+                            include 'customer/pesanpenerbangan.php';
+                        }
+                     } 
+                    } elseif ($_GET['menu'] == 'kelolapesanan'){
+                        include 'customer/myflight.php';
+                    } elseif ($_GET['menu'] == 'isisaldo') {
+                        include 'customer/kelolasaldo.php';
                     }
                 } else {
-                    include 'customer/myflight.php';
+                     include 'customer/flightcard.php';
                 }
             } elseif($_GET['page'] == 'maskapai') {
                 if (isset($_GET['menu'])) {
@@ -46,6 +66,10 @@
                         include 'maskapai/viewlistpesawat.php';
                     } elseif ($_GET['menu'] == 'viewjamterbang'){
                         include 'maskapai/viewjamterbang.php';
+                    } elseif ($_GET['menu'] == 'insertpesawat'){
+                        include 'maskapai/insertpesawat.php';
+                    } elseif($_GET['menu'] == 'viewjadwal'){
+                        include 'maskapai/viewpesawat.php';
                     }
 
 
