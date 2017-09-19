@@ -64,6 +64,16 @@
                 if (isset($_GET['menu'])) {
                     if ($_GET['menu'] == 'viewpesawat'){
                         include 'maskapai/viewlistpesawat.php';
+
+                        if(isset($_GET['act'])) {
+                            if($_GET['act'] == "edit") {
+                                include 'maskapai/editpesawat.php';
+                            } elseif ($_GET['act'] == "delete"){
+                                include 'maskapai/deletepesawat.php';
+                            }
+                        }
+
+
                     } elseif ($_GET['menu'] == 'viewjamterbang'){
                         include 'maskapai/viewjamterbang.php';
                     } elseif ($_GET['menu'] == 'insertpesawat'){
