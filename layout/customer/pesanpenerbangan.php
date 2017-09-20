@@ -3,7 +3,7 @@
 $idPenerbangan = $_GET['id'];
 $noKTP = $_SESSION['userID'];
 $harga = $_GET['harga'];
-$status = "Waiting payment";
+$status = "Waiting approval";
 $seat = "Not Set";
 $kodeBooking = "Not Set";
 $id_bayar = 0;
@@ -13,6 +13,7 @@ if (validPesanan($harga,$koneksi,$noKTP) == true) {
  $queryInsert = "INSERT INTO pesanan (no_ktp, id_bayar, no_seat, total_harga, status, kode_booking) VALUES ('$noKTP','$id_bayar','$seat','$harga','$status', '$kodeBooking')";
 
  $queryUpdate = "UPDATE detilpesan SET id_penerbangan='$idPenerbangan' WHERE id_penerbangan= 0";
+ $totalsaldo = renewSaldo($harga,$koneksi,$noKTP);
  $queryUpdateSaldo = "UPDATE customer SET saldo='$totalsaldo' WHERE no_ktp='$noKTP'";
  $insert = mysqli_query($koneksi, $queryInsert);
  $update = mysqli_query($koneksi, $queryUpdate);

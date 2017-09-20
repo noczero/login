@@ -72,14 +72,14 @@
                                 include 'maskapai/deletepesawat.php';
                             }
                         }
-
-
                     } elseif ($_GET['menu'] == 'viewjamterbang'){
                         include 'maskapai/viewjamterbang.php';
                     } elseif ($_GET['menu'] == 'insertpesawat'){
                         include 'maskapai/insertpesawat.php';
                     } elseif($_GET['menu'] == 'viewjadwal'){
                         include 'maskapai/viewpesawat.php';
+                    } elseif($_GET['menu'] == 'insertjadwal') {
+                        include 'maskapai/insertjadwal.php';
                     }
 
 

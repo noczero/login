@@ -45,13 +45,13 @@
 
 <div class=" container-fluid text-center col-md-8 col-md-offset-2">
   <h2>Registrasi Customer</h2>
-  <form class="loginform" method="POST" action="insertcustomer.php">
+  <form id="form_advanced_validation" class="loginform" method="POST" action="insertcustomer.php">
             <div class="form-group">
-              <label for="username" class="cols-sm-2 control-label">Card Identity(KTP)</label>
+              <label for="username" class="cols-sm-2 control-label">Card Identity (Passport/Kartu Pelajar/KTP)</label>
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-users fa" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="noktp" id="username"  placeholder="Enter your Card Identity"/>
+                  <input type="number" class="form-control" name="noktp" id="username" min="0"  required placeholder="Enter your Card Identity"/>
                 </div>
               </div>
             </div>
@@ -60,7 +60,7 @@
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-user" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="username" id="username"  placeholder="Enter your Username"/>
+                  <input type="text" class="form-control" name="username" id="username" min="3" max="15" placeholder="Enter your Username"/>
                 </div>
               </div>
             </div>
@@ -70,16 +70,35 @@
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
-                  <input type="password" class="form-control" name="password" id="password"  placeholder="Enter your Password"/>
+                  <input id="pwd" type="password" class="form-control" name="password" id="password" min="6" max="25" required placeholder="Enter your Password"/>
                 </div>
               </div>
             </div>
+            <div class="form-group">
+              <label for="password" class="cols-sm-2 control-label">Confirm Password</label>
+              <div class="cols-sm-10">
+                <div class="input-group">
+                  <span class="input-group-addon"><i class="fa fa-lock fa-lg" aria-hidden="true"></i></span>
+                  <input type="password" class="form-control" name="password" oninput="check(this)" id="password" min="6" max="25" required placeholder="Reenter your Password"/>
+                </div>
+              </div>
+            </div>
+            <script language='javascript' type='text/javascript'>
+                    function check(input) {
+                        if (input.value != document.getElementById('pwd').value) {
+                            input.setCustomValidity('Password Must be Matching.');
+                        } else {
+                            // input is valid -- reset the error message
+                            input.setCustomValidity('');
+                        }
+                    }
+                </script>
              <div class="form-group">
               <label for="username" class="cols-sm-2 control-label">Name</label>
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-bookmark" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="name" id="username"  placeholder="Enter your name"/>
+                  <input type="text" class="form-control" name="name" id="username" min="3" max="25" required  placeholder="Enter your name"/>
                 </div>
               </div>
             </div>
@@ -88,7 +107,7 @@
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-globe" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="address" id="username"  placeholder="Enter your address"/>
+                  <input type="text" class="form-control" name="address" id="username" min="3" max="25" required  placeholder="Enter your address"/>
                 </div>
               </div>
             </div>
@@ -97,7 +116,7 @@
               <div class="cols-sm-10">
                 <div class="input-group date">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-link" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="age" id="username"  placeholder="Enter your age"/>
+                  <input type="number" class="form-control" name="age" id="username" required min="0" max="100"  placeholder="Enter your age"/>
                 </div>
               </div>
             </div>
@@ -106,7 +125,7 @@
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-leaf" aria-hidden="true"></i></span>
-                  <select class="input-group" name="gender">
+                  <select class="input-group" name="gender" required>
                     <option value="">----Select Gender---</option>
                     <option value="L">Male</option>
                     <option value="P">Female</option>
@@ -114,12 +133,13 @@
                 </div>
               </div>
             </div>
+
              <div class="form-group">
               <label for="username" class="cols-sm-2 control-label">Phone Number</label>
               <div class="cols-sm-10">
                 <div class="input-group">
                   <span class="input-group-addon"><i class="glyphicon glyphicon-phone" aria-hidden="true"></i></span>
-                  <input type="text" class="form-control" name="notel" id="username"  placeholder="Enter your birthday"/>
+                  <input type="text" class="form-control" name="notel" id="username" required min="0" placeholder="Enter your phone number"/>
                 </div>
               </div>
             </div>
