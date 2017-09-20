@@ -37,6 +37,8 @@
                                 include 'admin/deletepesanan.php';
                             }
                         }
+                    } elseif ($_GET['menu'] == 'editprofile') {
+                        include 'admin/editprofileadmin.php';
                     }
                 } else {
                     include 'defaultcontent.php';
@@ -56,6 +58,8 @@
                         include 'customer/myflight.php';
                     } elseif ($_GET['menu'] == 'isisaldo') {
                         include 'customer/kelolasaldo.php';
+                    } elseif ($_GET['menu'] == 'editprofile') {
+                        include 'customer/editprofilecustomer.php';
                     }
                 } else {
                      include 'customer/flightcard.php';
@@ -77,9 +81,21 @@
                     } elseif ($_GET['menu'] == 'insertpesawat'){
                         include 'maskapai/insertpesawat.php';
                     } elseif($_GET['menu'] == 'viewjadwal'){
-                        include 'maskapai/viewpesawat.php';
+                        include 'maskapai/viewjadwalpenerbangan.php';
+
+                        if(isset($_GET['act'])) {
+                            if($_GET['act'] == "edit") {
+                                include 'maskapai/editjadwalpenerbangan.php';
+                            } elseif ($_GET['act'] == "delete"){
+                                include 'maskapai/deletejadwalpenerbangan.php';
+                            }
+                        }
                     } elseif($_GET['menu'] == 'insertjadwal') {
                         include 'maskapai/insertjadwal.php';
+                    } elseif ($_GET['menu'] == 'editprofile') {
+                        include 'maskapai/editprofilemaskapai.php';
+                    } elseif ($_GET['menu'] == 'insertjamterbang') {
+                        include 'maskapai/insertjamterbang.php';
                     }
 
 

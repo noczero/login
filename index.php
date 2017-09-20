@@ -40,9 +40,13 @@ if ((!$_SESSION['userID'])){
     <!-- Custom Css -->
     <link href="css/style.css" rel="stylesheet">
 
+    <!-- bootstrap select -->
+    <link href="plugins/bootstrap-select/css/bootstrap-select.css"  rel="stylesheet">
+
+
     <!-- AdminBSB Themes. You can choose a theme from css/themes instead of get all themes -->
     <link href="css/themes/all-themes.css" rel="stylesheet" /></head>
-<body class="theme-red">
+<body class="theme-blue">
    <!-- Page Loader -->
     <div class="page-loader-wrapper">
         <div class="loader">
@@ -77,7 +81,7 @@ if ((!$_SESSION['userID'])){
             <div class="navbar-header">
                 <a href="javascript:void(0);" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar-collapse" aria-expanded="false"></a>
                 <a href="javascript:void(0);" class="bars"></a>
-                <a class="navbar-brand" href="index.html">Zero Airlines Reservation System</a>
+                <a class="navbar-brand" href="#">Zero Airlines Reservation System</a>
             </div>
             <div class="collapse navbar-collapse" id="navbar-collapse">
                 <ul class="nav navbar-nav navbar-right">
@@ -152,8 +156,12 @@ if ((!$_SESSION['userID'])){
     <script src="plugins/jquery-sparkline/jquery.sparkline.js"></script>
     <!-- Custom Js -->
     <script src="js/admin.js"></script>
-    <script src="js/pages/index.js"></script>
-    
+    <!-- 
+    <script src="js/pages/index.js"></script>html comment -->
+      <!-- Input Mask Plugin Js -->
+    <script src="plugins/jquery-inputmask/jquery.inputmask.bundle.js"></script>
+    <script src="js/inputjam.js"></script>
+
 
 
 </body>

@@ -1,4 +1,5 @@
 
+
 <div class="container-fluid">
     <div class="card">
         <div class="header">
@@ -20,14 +21,11 @@
                          <th>Waktu Berangkat</th>
                          <th>Waktu Tiba</th>
                          <th>Harga</th>
-                         <th>Action</th>
                      </tr>
                  </thead>
                  <tbody>
                       <?php 
-
-                        $id = $_SESSION['userID'];
-                        $querySelect = "SELECT * FROM r_penerbangan INNER JOIN pesawat ON pesawat.id_pesawat=r_penerbangan.id_pesawat INNER JOIN maskapai ON pesawat.id_maskapai=maskapai.id_maskapai INNER JOIN jadwal ON jadwal.id_jadwal=r_penerbangan.id_jadwal WHERE maskapai.id_maskapai='$id'";
+                        $querySelect = "SELECT * FROM r_penerbangan INNER JOIN pesawat ON pesawat.id_pesawat=r_penerbangan.id_pesawat INNER JOIN maskapai ON pesawat.id_maskapai=maskapai.id_maskapai INNER JOIN jadwal ON jadwal.id_jadwal=r_penerbangan.id_jadwal";
 
                         $result = mysqli_query($koneksi,$querySelect);
                         $no = 1;
@@ -47,10 +45,7 @@
                          <td><?php echo $pecah['waktu_brkt'] ?></td>
                          <td><?php echo $pecah['waktu_tiba'] ?></td>
                          <td><?php echo $pecah['harga'] ?></td>
-                         <td> 
-                            <a href="index.php?page=maskapai&menu=viewjadwal&act=edit&id=<?php echo $pecah['id_penerbangan']; ?> ">Edit</a>
-                            <a href="index.php?page=maskapai&menu=viewjadwal&act=delete&id=<?php echo $pecah['id_penerbangan']; ?> ">Delete</a>
-                         </td>
+                 
                      </tr>
 
                      <?php 
